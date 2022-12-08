@@ -1,17 +1,38 @@
 body {
-    background-image: url();
+    background-image: url("/SITE ASSETS/PICTURES/BW Happy Students.jpg");
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    height: 75vh;
+
 }
 
 h2 {
-    font-size: 12em;
+    font-size: 3em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color:aqua;
 }
 
 div.mainUI {
-
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ width: 75vw;
+ height: 75vh;
 }
 
+div.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    height: 75vh;
+   }
 
 label {
 
