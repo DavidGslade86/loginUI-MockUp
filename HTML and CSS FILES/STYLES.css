@@ -1,20 +1,27 @@
-body {
-    background-image: url("/SITE ASSETS/PICTURES/BW Happy Students.jpg");
+div.container {
+    
+    background-image: url("https://djgwebdevelopment.files.wordpress.com/2022/12/bw-happy-students.jpg?resize=438%2C438");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0%;
+    margin: 0%;
 }
 
 .title-container {
-    display: flex;
+    display: float;
     justify-content: center;
     align-items: center;
-    width: 75vw;
-    height: 75vh;
-
+    width: auto;
+    height: 18vh;
+    flex-wrap: nowrap;
+    white-space: nowrap;
 }
 
 h2 {
     font-size: 3em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color:aqua;
+    font-family: 'GFS Neohellenic', sans-serif; 
+    color:  rgb(255,255,255)
+    
 }
 
 div.mainUI {
@@ -22,16 +29,24 @@ div.mainUI {
  flex-direction: column;
  justify-content: center;
  align-items: center;
- width: 75vw;
- height: 75vh;
+ width:auto;
+ height: auto;
 }
 
 div.login-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-style: solid;
-    height: 75vh;
+    border-style:inset;
+    border-radius: 1em;
+    height: 40vh;
+    width: 40vw;
+    padding: 1em;
+    background: rgb(255,97,0);
+    background: linear-gradient(180deg, rgba(255,97,0,1) 0%, rgba(241,119,17,1) 45%, rgba(251,148,13,1) 100%);
+    box-shadow: 17px 16px 59px 0px rgba(192, 70, 0, 0.75);
+    -webkit-box-shadow: 17px 16px 59px 0px rgba(192, 70, 0, 0.75);
+    -moz-box-shadow: 17px 16px 59px 0px rgba(192, 70, 0, 0.75);
    }
 
 label {

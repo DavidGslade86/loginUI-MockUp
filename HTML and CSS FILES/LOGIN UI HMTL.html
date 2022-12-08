@@ -4,50 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caudex&family=GFS+Neohellenic:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="STYLES.css">
     <title>Spirit Series Login</title>
 </head>
-<body> 
-    <script>
-        function show(a) {
-        var x=document.getElementById(a);
-        var c=x.nextElementSibling
-            if (x.getAttribute('type') == "password") {
-            c.removeAttribute("class");
-            c.setAttribute("class","fas fa-eye");
-            x.removeAttribute("type");
-                x.setAttribute("type","text");
-            } else {
-            x.removeAttribute("type");
-                x.setAttribute('type','password');
-            c.removeAttribute("class");
-            c.setAttribute("class","fas fa-eye-slash");
-            }
-}
-    </script>
-    <div class="mainUI">   
+<body>
+    <div class ="container"> 
+        <script>
+            function show(a) {
+            var x=document.getElementById(a);
+            var c=x.nextElementSibling
+                if (x.getAttribute('type') == "password") {
+                c.removeAttribute("class");
+                c.setAttribute("class","fas fa-eye");
+                x.removeAttribute("type");
+                    x.setAttribute("type","text");
+                } else {
+                x.removeAttribute("type");
+                    x.setAttribute('type','password');
+                c.removeAttribute("class");
+                c.setAttribute("class","fas fa-eye-slash");
+                }
+    }
+        </script>
+        <div class="mainUI"> 
+            <div class="title-container">
             <h2>Login Page</h2>
-            <br>    
-            <form id="login" method="get" action="login.php">    
-                <label><b>User Name     
-                </b>    
-                </label>    
-                <input type="text" name="username" autofocus="" autocapitalize="none" id="username" required="" placeholder="Username">    
-                <br><br>    
-                <label><b>Password     
-                </b>    
-                </label>    
-                <input type="password" name="password" required="" id="id_password" placeholder="Password">
-                <i onclick="show('id_password')" class="far fa-eye" id="togglePassword" style="margin-left: -1.8em; cursor: pointer;"></i>    
-                <br><br>    
-                <button type="submit" class="submit-btn" id="log">Login</button>       
-                <br><br>    
-                <input type="checkbox" class="check" id="check">    
-                <span>Remember me</span>    
-                <br><br>    
-                <span>Forgot <a href="#">Password</a></span>    
-            </form>     
+            </div>  
+            <div class="login-container"> 
+                <form id="login" method="get" action="#">    
+                    <label><b>User Name     
+                    </b>    
+                    </label>    
+                    <input type="text" name="username" autofocus="" autocapitalize="none" id="username" required="" placeholder="Username">    
+                    <br><br>    
+                    <label><b>Password     
+                    </b>    
+                    </label>    
+                    <input type="password" name="password" required="" id="id_password" placeholder="Password">
+                    <i onclick="show('id_password')" class="far fa-eye" id="togglePassword" style="margin-left: -1.8em; cursor: pointer;"></i>    
+                    <br><br>    
+                    <button type="submit" class="submit-btn" id="log">Login</button>       
+                    <br><br>    
+                    <input type="checkbox" class="check" id="check">    
+                    <span>Remember me</span>    
+                    <br><br>    
+                    <span>Forgot <a href="#">Password</a></span>    
+                </form>
+            </div>      
         </div> 
+    </div> 
 </body>
 </html>
