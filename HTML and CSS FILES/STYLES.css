@@ -1,14 +1,23 @@
-div.container {
-    
+div.container { 
     background-image: url("https://djgwebdevelopment.files.wordpress.com/2022/12/bw-happy-students.jpg?resize=438%2C438");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center left;
     padding: 0%;
     margin: 0%;
 }
 
+div.mainUI {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width:auto;
+    height: auto;
+   }
+
 .title-container {
-    display: float;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: auto;
@@ -20,18 +29,12 @@ div.container {
 h2 {
     font-size: 3em;
     font-family: 'GFS Neohellenic', sans-serif; 
+    text-shadow: .05em .05em .1em  rgb(0, 0, 0);
     color:  rgb(255,255,255)
+    
     
 }
 
-div.mainUI {
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- width:auto;
- height: auto;
-}
 
 div.login-container {
     display: flex;
@@ -44,15 +47,50 @@ div.login-container {
     padding: 1em;
     background: rgb(255,97,0);
     background: linear-gradient(180deg, rgba(255,97,0,1) 0%, rgba(241,119,17,1) 45%, rgba(251,148,13,1) 100%);
-    box-shadow: 17px 16px 59px 0px rgba(192, 70, 0, 0.75);
-    -webkit-box-shadow: 17px 16px 59px 0px rgba(192, 70, 0, 0.75);
-    -moz-box-shadow: 17px 16px 59px 0px rgba(192, 70, 0, 0.75);
+    box-shadow: .3em .7em 4em 0em rgba(192, 70, 0, 0.75);
+    -webkit-box-shadow: .3em .7em 4em 0em rgba(192, 70, 0, 0.75);
+    -moz-box-shadow: .3em .7em 4em 0em rgba(192, 70, 0, 0.75);
    }
 
 label {
-
+    font-family: Arial, Helvetica, sans-serif;
+    color:  rgb(255,255,255);
+    text-shadow: .05em .05em .1em  rgb(0, 0, 0);
 }
+input.text-box {
+    border: .1em solid #ccc;
+     
+    -moz-border-radius: .5em;
+    -webkit-border-radius: .5em;
+    border-radius: .5em;
+    
+    -moz-box-shadow: .2em .2em .2em #666;
+    -webkit-box-shadow: .2em .2em .2em #666;
+    box-shadow: .2em .2em .2em #666;
+    
+    padding: .4em .5em;
+    
+    outline: 0;
+  
+    -webkit-appearance: none;
+  }
+  
+  input.text-box:focus {
 
-check {
+    border-color: rgb(135, 135, 135);
+    
+  }
 
-}
+  span {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+  }
+
+  a:link {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover {
+    color:rgb(243, 95, 41);
+  }
