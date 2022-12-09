@@ -30,31 +30,60 @@
                 }
     }
         </script>
+
         <div class="mainUI"> 
             <div class="title-container">
-            <h2>Login Page</h2>
+            <h2>Spirit Series Login</h2>
             </div>  
             <div class="login-container"> 
-                <form id="login" method="get" action="#">    
-                    <label><b>Username     
-                    </b>    
-                    </label>    
-                    <input class="text-box" type="text" name="username" autofocus="" autocapitalize="none" id="username" required="" placeholder="Username">    
-                    <br><br>    
-                    <label><b>Password     
-                    </b>    
-                    </label>    
-                    <input class="text-box" type="password" name="password" required="" id="id_password" placeholder="Password">
-                    <i onclick="show('id_password')" class="far fa-eye" id="togglePassword" style="margin-left: -1.8em; cursor: pointer;"></i>    
-                    <br><br>    
+                <div class="log-inputs">
+                    <form id="login" method="get" action="#"> 
+                        <div class="username">  
+                            <label><b>Username</b></label>    
+                            <input class="text-box" type="text" name="username" autofocus="" autocapitalize="none" id="username" required="" placeholder="Username">    
+                        </div> 
+                        <div class="password">
+                            <label><b>Password</b></label>    
+                            <input class="text-box" type="password" name="password" required="" id="id_password" placeholder="Password">
+                            <div class="eyeball">
+                                <i onclick="show('id_password')" class="far fa-eye" id="togglePassword" style="margin-left: -1.8em; cursor: pointer;"></i>
+                            </div>
+                        </div>
+            </div> 
+                    </form>
+                <div class="bottom-btns">
                     <button type="submit" class="submit-btn" id="log">Login</button>       
                     <br><br>    
                     <input type="checkbox" class="check" id="check">    
                     <span>Remember Me</span>    
                     <br><br>    
-                    <span><a href="#">Forgot Password</a></span>    
-                </form>
-            </div>      
+                    <span><a href="#">Forgot Password</a></span>
+                </div>    
+                </div> 
+                <!--<div class="put-behind">
+                    <div class="bkground-images1">
+    
+                        <div class="posters"><img src="https://i0.wp.com/djgwebdevelopment.files.wordpress.com/2022/12/seeking-socrates-cover-2.jpg?ssl=1"></div>
+    
+                        <div class="posters"><img src="https://i0.wp.com/djgwebdevelopment.files.wordpress.com/2022/12/freedom-train-script-cover-2.jpg?ssl=1"></div>
+    
+                        <div class="posters"><img src="https://i0.wp.com/djgwebdevelopment.files.wordpress.com/2022/12/balad-of-sitting-bull-script-cover-2.jpg?ssl=1"></div>
+    
+                    </div>
+    
+                    <div class="bkground-images2">
+    
+                        <div class="posters2"><img src="https://i0.wp.com/djgwebdevelopment.files.wordpress.com/2022/12/galileos-crime-script-cover-2.jpg?ssl=1"></div>
+    
+                        <div class="posters2"><img src="https://i0.wp.com/djgwebdevelopment.files.wordpress.com/2022/12/buddha-walks-script-cover-2.jpg?ssl=1"></div>
+    
+                        <div class="posters2"><img src="https://i0.wp.com/djgwebdevelopment.files.wordpress.com/2022/12/conquistadors-wife-script-cover-2.jpg?ssl=1"></div>
+    
+                    </div>
+                </div>-->
+            </div>
+            
+
         </div> 
     </div> 
 </body>
