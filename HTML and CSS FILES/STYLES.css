@@ -23,7 +23,8 @@ div.mainUI {
   align-items: center;
   width:auto;
   height: 100%;
-  margin-top: 5%;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   }
 
 h1 {
@@ -106,6 +107,8 @@ div.login-container {
     max-height: 22em;
     min-width: 22em;
     padding: 2em;
+    padding-top: 3em;
+    padding-bottom: 3em;
     margin-bottom: 1em;
     margin-top: 2em;
     background: rgb(255,97,0);
