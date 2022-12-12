@@ -17,7 +17,7 @@
             function show(a) {
             var x=document.getElementById(a);
             var c=x.previousElementSibling
-                if (x.getAttribute('type') == "password") {
+                if (x.getAttribute('type') === "password") {
                 c.removeAttribute("class");
                 c.setAttribute("class","fas fa-eye");
                 x.removeAttribute("type");
@@ -35,27 +35,22 @@
                 <h1>SPIRIT SERIES</h1>
             </div>
             <div class="login-container">
-                <div class="title-container">
+                <!--<div class="title-container">
                     <h2>School Login</h2>
-                </div>   
-                <hr size="2em" width="100%">
-                <div class="log-inputs">
-                    <form id="login" method="get" action="#"> 
-                        <div class="username-container">  
-                            <label><b>Username</b></label>    
-                            <input class="text-box" type="text" name="username" autofocus="" autocapitalize="none" id="username" required="" placeholder="Username">    
-                        </div> 
-                        <div class="password-container">
-                            <label><b>Password</b></label>    
-                            <i onclick="show('id_password')" class="far fa-eye" id="togglePassword"></i>
-                            <input class="text-box" type="password" name="password" required="" id="id_password" placeholder="Password">
+                </div>-->
+                <div class="log-reg-container">
+                    <a href="#" class="top-reg">
+                        <div class="log-top-button">
+                            <h3>LOGIN</h3>
                         </div>
-                    </form>
-                </div> 
-                <div class="submit-container">
-                    <button type="submit" class="submit-btn" id="log">Login</button>
-                </div>       
-                <br>
+                    </a>a>
+                    <div class="reg-top-button">
+                        <a href="#" class="top-reg">
+                            <h3>REGISTER</h3>
+                        </a> 
+                    </div>                
+                </div>
+                <hr size="2em" width="80%">
                 <div class="social-container">
                     <div class="tube-container">
                         <a class="tube-link" href="https://www.youtube.com/channel/UC5nbZME3V21NIInjaqDsuuw" target="_blank" rel="noopener noreferrer">
@@ -81,13 +76,30 @@
                         </a>
                     </div>
                 </div>
+                <br>
+                <div class="log-inputs">
+                    <form id="login" method="get" action="#"> 
+                        <div class="username-container">  
+                            <label><b>Username</b></label>    
+                            <input class="text-box" type="text" name="username" autofocus="" autocapitalize="none" id="username" required="" placeholder="Username">    
+                        </div> 
+                        <div class="password-container">
+                            <label><b>Password</b></label>    
+                            <i onclick="show('id_password')" class="fas fa-eye-slash" id="togglePassword"></i>
+                            <input class="text-box" type="password" name="password" required="" id="id_password" placeholder="Password">
+                        </div>
+                    </form>
+                </div> 
+                <div class="submit-container">
+                    <button type="submit" class="submit-btn" id="log">Login</button>
+                </div>       
+                <br>
+
                 <div class="bottom-btns">
                     <br>
                     <div class="remember-me">
                         <input type="checkbox" class="check" id="check">
-    
                         <span>Remember Me</span>
-                    
                     </div>    
                     <br>
                     <div class="forgot-password">  
