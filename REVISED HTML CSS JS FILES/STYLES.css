@@ -72,11 +72,13 @@ div.mainUI {
 .head-container h1 {
   text-align: center;
   font-size: 4em;
-  font-family: 'GFS Neohellenic', sans-serif; 
+  font-family: 'Paytone One', sans-serif;
   text-shadow: .05em .05em .1em  rgb(0, 0, 0);
   color: rgb(255, 255, 255);
+  font-weight:
   width: 100%;
-  /* background-color: #ccc; */
+  margin-top: .2em;
+
 }
 
 div.login-container {
@@ -89,8 +91,7 @@ div.login-container {
   padding-right: 2em;
   padding-top: 0em;
   padding-bottom: 3em;
-  background: rgb(255,97,0);
-  background: linear-gradient(180deg, rgba(255,97,0,1) 0%, rgba(241,119,17,1) 45%, rgba(251,148,13,1) 100%);
+  background: linear-gradient(180deg, rgba(255, 98, 0, 0.968) 0%, rgba(241, 118, 17, 0.956) 45%, rgba(251, 148, 13, 0.972) 100%);
   box-shadow: .3em .7em 3em 0em rgba(19, 19, 19, 0.75);
   -webkit-box-shadow: .3em .7em 3em 0em rgba(31, 31, 30, 0.75);
   -moz-box-shadow: .3em .7em 3em 0em rgba(56, 56, 56, 0.75);
@@ -119,7 +120,7 @@ div.login-container {
 .log-reg-container .top h3 {
   font-size: 1.5em;
   text-align: center;
-  /* background-color: aqua; */
+  font-weight: 900;
   padding: 0em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -174,9 +175,9 @@ span a:visited:hover {
   width: 100%;
   z-index: 1;
   font-size: 1.2em;
-  color:rgb(243, 73, 0);
+  color:rgb(255,97,0);
   text-shadow: none;
-  font-weight: 700;
+  font-weight: 900;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   line-height: 2.6em;
@@ -211,7 +212,7 @@ input[type="radio"] {
 }
 
 #register:checked ~ .register {
-  color: rgb(243, 73, 0);
+  color: rgb(255,97,0);
 }
 
 #register:checked ~ .login {
@@ -288,6 +289,7 @@ label {
   margin-left: 2em;
   outline: 0;
   transition: all 0.4s ease;
+  cursor: pointer;
 }
 
 .submit-btn {
