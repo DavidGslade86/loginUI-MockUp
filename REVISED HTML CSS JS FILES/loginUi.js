@@ -10,6 +10,7 @@ function checkCred()
     else
     {
         alert("hmm, that doesn't match our records");
+        return false;
     }
 }
 
@@ -33,20 +34,23 @@ function show(a)
 
 function registerSub()
 {
-    var newUsername=document.forms["register-form"]["signupId"].value;
-    var newPassword=document.forms["register-form"]["NewPassword"].value;
-    var confPassword=document.forms["register-form"]["ConfirmPassword"].value;
-    if( !newUsername.replace(/\s+/, '').length ) {
-         alert( "The Name field is empty!" );
-         return false;
-    } else if ( !newPassword.replace(/\s+/, '').length ) {
+    var newUsername=document.getElementById('signupId').value;
+    var newPassword=document.getElementById('id_new_password').value;
+    var confPassword=document.getElementById('confirm_id_password').value;
+    if(newUsername == " ") 
+    {
+        alert( "The Name field is empty!" );
+        return false;
+    } else if (newPassword == " ")
+     {
         alert( "The Password field is empty!" );
         return false;
-   } else if ( !confPassword.replace(/\s+/, '').length ) {
+   } else if (confPassword == " ") {
         alert( "The Confirm Password field is empty!" );
         return false;
    } else {
-        alert("Thanks You For Registering!")
+        alert("Thanks For Registering!")
+        return false;
    }
 }
 const loginForm = document.querySelector("form.login-form")
